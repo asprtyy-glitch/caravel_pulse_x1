@@ -2,7 +2,7 @@
     "PDK": "sky130A",
     "DESIGN_NAME": "user_project_wrapper",
     "VERILOG_FILES": [
-        "dir::user_project_wrapper.v",
+        "dir::../../verilog/rtl/user_project_wrapper.v",
         "dir::../../verilog/rtl/defines.v",
         "dir::../../verilog/rtl/Pulse_X1_Core_v2.v",
         "dir::../../verilog/rtl/Pulse_X1_Edge_AI_Core.v"
