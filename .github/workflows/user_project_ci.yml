@@ -10,6 +10,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Set up environment
+        run: |
+          make setup
+          make install
+        env:
+          DISABLE_DEPRECATED_MAKEFILE_PROMPT: "1"
+
       - name: Hardening
         env:
           INTERACTIVE: "false"
