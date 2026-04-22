@@ -15,5 +15,6 @@ jobs:
           INTERACTIVE: "false"
           TERM: xterm
           DISPLAY: ""
+          DISABLE_DEPRECATED_MAKEFILE_PROMPT: "1"
         run: |
           make harden
