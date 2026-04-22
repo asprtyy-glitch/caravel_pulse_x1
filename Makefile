@@ -17,7 +17,7 @@ export CUP_ROOT ?= $(shell pwd)
 export TIMING_ROOT ?= $(shell pwd)/dependencies/timing-scripts
 export PROJECT_ROOT = $(CUP_ROOT)
 MAKEFLAGS += --warn-undefined-variables
-
+export DESIGN_NAME = user_project_wrapper
 export CARAVEL_ROOT?=$(PWD)/caravel
 export UPRJ_ROOT?=$(PWD)
 PRECHECK_ROOT?=${HOME}/mpw_precheck
