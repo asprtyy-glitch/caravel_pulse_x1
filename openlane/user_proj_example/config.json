@@ -7,22 +7,13 @@
         "dir::../../verilog/rtl/Pulse_X1_Core_v2.v",
         "dir::../../verilog/rtl/Pulse_X1_Edge_AI_Core.v"
     ],
-    "DRT_THREADS": 16,
     "CLOCK_PORT": "wb_clk_i",
     "CLOCK_PERIOD": 10,
     "DIE_AREA": "0 0 2920 3520",
     "FP_SIZING": "absolute",
     "PL_TARGET_DENSITY_PCT": 15,
-    "FP_PDN_VPITCH": 180,
-    "FP_PDN_HPITCH": 180,
-    "FP_PDN_VOFFSET": 5,
-    "FP_PDN_HOFFSET": 5,
-    "MAGIC_ZEROIZE_ORIGIN": 0,
     "FP_CORE_UTIL": 40,
-    "EXTRA_GDS_FILES": [
-        "dir::../../gds/user_proj_example.gds"
-    ],
-    "EXTRA_LEFS": [
-        "dir::../../lef/user_proj_example.lef"
-    ]
+    "DRT_THREADS": 16,
+    "EXTRA_GDS_FILES": "dir::../../gds/user_proj_example.gds",
+    "EXTRA_LEFS": "dir::../../lef/user_proj_example.lef"
 }
