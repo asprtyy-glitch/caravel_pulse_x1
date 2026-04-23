@@ -8,9 +8,9 @@
         "dir::../../verilog/rtl/user_project_wrapper.v"
     ],
     "CLOCK_PORT": "wb_clk_i",
-    "CLOCK_PERIOD": 10,
-    "DIE_AREA": "0 0 2920 3520",
+    "CLOCK_PERIOD": 15,
     "FP_SIZING": "absolute",
+    "DIE_AREA": "0 0 2920 3520",
     "RUN_LINTER": 0,
     "QUIT_ON_LINTER_ERRORS": false,
     "QUIT_ON_TIMING_VIOLATIONS": false,
