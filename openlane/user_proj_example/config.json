@@ -11,5 +11,9 @@
     "CLOCK_PERIOD": 10,
     "DIE_AREA": "0 0 2920 3520",
     "FP_SIZING": "absolute",
-    "DRT_THREADS": 16
+    "DRT_THREADS": 16,
+    "RUN_LINTER": 0,
+    "QUIT_ON_LINTER_ERRORS": false,
+    "SYNTH_STRATEGY": "AREA 0",
+    "QUIT_ON_TIMING_VIOLATIONS": false
 }
