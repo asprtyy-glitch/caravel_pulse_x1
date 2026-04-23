@@ -19,6 +19,22 @@
     "FP_PDN_HOFFSET": 5,
     "MAGIC_ZEROIZE_ORIGIN": 0,
     "FP_CORE_UTIL": 40,
-    "EXTRA_GDS_FILES": "dir::../../gds/user_proj_example.gds",
-    "EXTRA_LEFS": "dir::../../lef/user_proj_example.lef"
+    "MACROS": {
+        "AI_System.core_gen[0].core_inst": { "x": 100,  "y": 100,  "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[1].core_inst": { "x": 800,  "y": 100,  "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[2].core_inst": { "x": 1500, "y": 100,  "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[3].core_inst": { "x": 2200, "y": 100,  "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[4].core_inst": { "x": 100,  "y": 900,  "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[5].core_inst": { "x": 800,  "y": 900,  "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[6].core_inst": { "x": 1500, "y": 900,  "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[7].core_inst": { "x": 2200, "y": 900,  "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[8].core_inst": { "x": 100,  "y": 1700, "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[9].core_inst": { "x": 800,  "y": 1700, "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[10].core_inst": { "x": 1500, "y": 1700, "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[11].core_inst": { "x": 2200, "y": 1700, "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[12].core_inst": { "x": 100,  "y": 2500, "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[13].core_inst": { "x": 800,  "y": 2500, "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[14].core_inst": { "x": 1500, "y": 2500, "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[15].core_inst": { "x": 2200, "y": 2500, "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" }
+    }
 }
