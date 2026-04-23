@@ -11,11 +11,5 @@
     "CLOCK_PERIOD": 10,
     "DIE_AREA": "0 0 2920 3520",
     "FP_SIZING": "absolute",
-    "PL_TARGET_DENSITY_PCT": 15,
-    "FP_CORE_UTIL": 40,
-    "DRT_THREADS": 16,
-    "EXTRA_GDS_FILES": "dir::../../gds/user_proj_example.gds",
-    "EXTRA_LEFS": "dir::../../lef/user_proj_example.lef",
-    "RUN_LINTER": 0,
-    "QUIT_ON_LINTER_ERRORS": false
+    "DRT_THREADS": 16
 }
