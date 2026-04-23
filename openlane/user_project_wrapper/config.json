@@ -7,7 +7,7 @@
         "dir::../../verilog/rtl/Pulse_X1_Core_v2.v",
         "dir::../../verilog/rtl/Pulse_X1_Edge_AI_Core.v"
     ],
-    "ROUTING_CORES": 16,
+    "DRT_THREADS": 16,
     "CLOCK_PORT": "user_clock2",
     "CLOCK_PERIOD": 10,
     "DIE_AREA": "0 0 2920 3520",
@@ -36,6 +36,5 @@
         "AI_System.core_gen[13].core_inst": { "x": 800,  "y": 2500, "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
         "AI_System.core_gen[14].core_inst": { "x": 1500, "y": 2500, "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
         "AI_System.core_gen[15].core_inst": { "x": 2200, "y": 2500, "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" }
-    },
-    "QUIT_ON_TIMING_VIOLATIONS": false
+    }
 }
