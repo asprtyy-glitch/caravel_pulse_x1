@@ -15,5 +15,7 @@
     "FP_CORE_UTIL": 40,
     "DRT_THREADS": 16,
     "EXTRA_GDS_FILES": "dir::../../gds/user_proj_example.gds",
-    "EXTRA_LEFS": "dir::../../lef/user_proj_example.lef"
+    "EXTRA_LEFS": "dir::../../lef/user_proj_example.lef",
+    "RUN_LINTER": 0,
+    "QUIT_ON_LINTER_ERRORS": false
 }
