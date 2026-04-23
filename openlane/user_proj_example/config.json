@@ -1,72 +1,40 @@
 {
+    "PDK": "sky130A",
     "DESIGN_NAME": "user_proj_example",
-    "FP_PDN_MULTILAYER": false,
     "VERILOG_FILES": [
         "dir::../../verilog/rtl/defines.v",
-        "dir::../../verilog/rtl/user_proj_example.v"
+        "dir::../../verilog/rtl/user_proj_example.v",
+        "dir::../../verilog/rtl/Pulse_X1_Core_v2.v",
+        "dir::../../verilog/rtl/Pulse_X1_Edge_AI_Core.v"
     ],
-    "CLOCK_PERIOD": 25,
+    "DRT_THREADS": 16,
     "CLOCK_PORT": "wb_clk_i",
-    "CLOCK_NET": "counter.clk",
+    "CLOCK_PERIOD": 10,
+    "DIE_AREA": "0 0 2920 3520",
     "FP_SIZING": "absolute",
-    "DIE_AREA": [
-        0,
-        0,
-        2800,
-        1760
-    ],
-    "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
-    "MAX_TRANSITION_CONSTRAINT": 1.0,
-    "MAX_FANOUT_CONSTRAINT": 16,
-    "PL_RESIZER_SETUP_SLACK_MARGIN": 0.4,
-    "GRT_RESIZER_SETUP_SLACK_MARGIN": 0.2,
-    "GRT_RESIZER_HOLD_SLACK_MARGIN": 0.2,
-    "PL_RESIZER_HOLD_SLACK_MARGIN": 0.4,
-    "CTS_CLK_MAX_WIRE_LENGTH": 500,
-    "MAGIC_DEF_LABELS": false,
-    "SYNTH_ABC_BUFFERING": false,
-    "RUN_HEURISTIC_DIODE_INSERTION": true,
-    "HEURISTIC_ANTENNA_THRESHOLD": 110,
-    "RUN_ANTENNA_REPAIR": true,
-    "RUN_POST_GRT_DESIGN_REPAIR": true,
-    "RUN_POST_GRT_RESIZER_TIMING": true,
-    "VDD_NETS": [
-        "vccd1"
-    ],
-    "GND_NETS": [
-        "vssd1"
-    ],
-    "FALLBACK_SDC_FILE": "dir::base_user_proj_example.sdc",
-    "MAGIC_DRC_USE_GDS": true,
-    "DPL_CELL_PADDING": 2,
-    "GPL_CELL_PADDING": 2,
-    "pdk::sky130*": {
-        "RT_MAX_LAYER": "met4",
-        "scl::sky130_fd_sc_hd": {
-            "CLOCK_PERIOD": 25
-        },
-        "scl::sky130_fd_sc_hdll": {
-            "CLOCK_PERIOD": 10
-        },
-        "scl::sky130_fd_sc_hs": {
-            "CLOCK_PERIOD": 8
-        },
-        "scl::sky130_fd_sc_ls": {
-            "CLOCK_PERIOD": 10,
-            "SYNTH_MAX_FANOUT": 5
-        },
-        "scl::sky130_fd_sc_ms": {
-            "CLOCK_PERIOD": 10
-        }
-    },
-    "pdk::gf180mcuC": {
-        "STD_CELL_LIBRARY": "gf180mcu_fd_sc_mcu7t5v0",
-        "CLOCK_PERIOD": 24.0,
-        "RT_MAX_LAYER": "Metal4",
-        "SYNTH_MAX_FANOUT": 4,
-        "PL_TARGET_DENSITY_PCT": 45
-    },
-    "meta": {
-        "version": 2
+    "PL_TARGET_DENSITY": 0.15,
+    "FP_PDN_VPITCH": 180,
+    "FP_PDN_HPITCH": 180,
+    "FP_PDN_VOFFSET": 5,
+    "FP_PDN_HOFFSET": 5,
+    "MAGIC_ZEROIZE_ORIGIN": 0,
+    "FP_CORE_UTIL": 40,
+    "MACROS": {
+        "AI_System.core_gen[0].core_inst": { "x": 100,  "y": 100,  "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[1].core_inst": { "x": 800,  "y": 100,  "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[2].core_inst": { "x": 1500, "y": 100,  "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[3].core_inst": { "x": 2200, "y": 100,  "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[4].core_inst": { "x": 100,  "y": 900,  "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[5].core_inst": { "x": 800,  "y": 900,  "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[6].core_inst": { "x": 1500, "y": 900,  "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[7].core_inst": { "x": 2200, "y": 900,  "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[8].core_inst": { "x": 100,  "y": 1700, "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[9].core_inst": { "x": 800,  "y": 1700, "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[10].core_inst": { "x": 1500, "y": 1700, "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[11].core_inst": { "x": 2200, "y": 1700, "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[12].core_inst": { "x": 100,  "y": 2500, "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[13].core_inst": { "x": 800,  "y": 2500, "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[14].core_inst": { "x": 1500, "y": 2500, "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" },
+        "AI_System.core_gen[15].core_inst": { "x": 2200, "y": 2500, "orientation": "N", "gds": "dir::../../gds/user_proj_example.gds", "lef": "dir::../../lef/user_proj_example.lef" }
     }
 }
