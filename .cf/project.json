@@ -1,65 +1,64 @@
 {
   "precheck": {
     "version": "1.3.2",
-    "timestamp": "2026-04-24T18:16:40.825146+00:00",
+    "timestamp": "2026-04-24T20:44:21.762867+00:00",
     "pdk": "sky130A",
     "passed": false,
     "checks": {
       "topcell_check": {
         "status": "pass",
-        "duration_s": 2.08
+        "duration_s": 1.99
       },
       "gpio_defines": {
-        "status": "fail",
-        "duration_s": 1.34,
-        "details": "GPIO defines: Invalid directives (33): USER_CONFIG_GPIO_5_INIT=13'hXXXX USER_CONFIG_GPIO_6_INIT=13'hXXXX USER_CONFIG_GPIO_7_INIT=13'hXXXX USER_CONFIG_GPIO_8_INIT=13'hXXXX USER_CONFIG_GPIO_9_INIT=13'hXXXX USER_CONFIG_GPIO_10_INIT=13'hXXXX USER_CONFIG_GPIO_11_INIT=13'hXXXX USER_CONFIG_GPIO_12_INIT=13'hXXXX USER_CONFIG_GPIO_13_INIT=13'hXXXX USER_CONFIG_GPIO_25_INIT=13'hXXXX USER_CONFIG_GPIO_26_INIT=13'hXXXX USER_CONFIG_GPIO_27_INIT=13'hXXXX USER_CONFIG_GPIO_28_INIT=13'hXXXX USER_CONFIG_GPIO_29_INIT=13'hXXXX USER_CONFIG_GPIO_30_INIT=13'hXXXX USER_CONFIG_GPIO_31_INIT=13'hXXXX USER_CONFIG_GPIO_32_INIT=13'hXXXX USER_CONFIG_GPIO_33_INIT=13'hXXXX USER_CONFIG_GPIO_34_INIT=13'hXXXX USER_CONFIG_GPIO_35_INIT=13'hXXXX USER_CONFIG_GPIO_36_INIT=13'hXXXX USER_CONFIG_GPIO_37_INIT=13'hXXXX USER_CONFIG_GPIO_14_INIT=13'hXXXX USER_CONFIG_GPIO_15_INIT=13'hXXXX USER_CONFIG_GPIO_16_INIT=13'hXXXX USER_CONFIG_GPIO_17_INIT=13'hXXXX USER_CONFIG_GPIO_18_INIT=13'hXXXX USER_CONFIG_GPIO_19_INIT=13'hXXXX USER_CONFIG_GPIO_20_INIT=13'hXXXX USER_CONFIG_GPIO_21_INIT=13'hXXXX USER_CONFIG_GPIO_22_INIT=13'hXXXX USER_CONFIG_GPIO_23_INIT=13'hXXXX USER_CONFIG_GPIO_24_INIT=13'hXXXX"
+        "status": "pass",
+        "duration_s": 1.16
       },
       "xor": {
         "status": "pass",
-        "duration_s": 18.46
+        "duration_s": 17.57
       },
       "klayout_feol": {
         "status": "pass",
-        "duration_s": 306.52
+        "duration_s": 284.62
       },
       "klayout_beol": {
         "status": "pass",
-        "duration_s": 794.6
+        "duration_s": 720.55
       },
       "klayout_offgrid": {
         "status": "pass",
-        "duration_s": 191.37
+        "duration_s": 179.49
       },
       "klayout_met_min_ca_density": {
         "status": "pass",
-        "duration_s": 55.17
+        "duration_s": 50.85
       },
       "klayout_pin_label_purposes_overlapping_drawing": {
         "status": "pass",
-        "duration_s": 35.12
+        "duration_s": 32.43
       },
       "klayout_zeroarea": {
         "status": "pass",
-        "duration_s": 9.64
+        "duration_s": 9.33
       },
       "spike_check": {
         "status": "pass",
-        "duration_s": 6.67
+        "duration_s": 6.42
       },
       "illegal_cellname_check": {
         "status": "pass",
-        "duration_s": 2.07
+        "duration_s": 1.99
       },
       "lvs": {
         "status": "pass",
-        "duration_s": 744.53
+        "duration_s": 700.62
       },
       "oeb": {
         "status": "fail",
-        "duration_s": 8.15,
-        "details": "33 errors, 10 warnings across 38 GPIOs",
+        "duration_s": 7.94,
+        "details": "44 errors, 10 warnings across 38 GPIOs",
         "report": {
-          "report_relpath": "/tmp/tmpys8d6qu9/repo/precheck_results/24_APR_2026___17_40_24/outputs/reports/cvc.oeb.report",
+          "report_relpath": "/tmp/tmp4_nprumn/repo/precheck_results/24_APR_2026___20_10_45/outputs/reports/cvc.oeb.report",
           "design_type": "caravel",
           "gpios": [
             {
@@ -147,10 +146,10 @@
               "oeb_min": "vssd*",
               "oeb_sim": null,
               "oeb_max": "vccd*",
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 0
             },
             {
               "gpio": 6,
@@ -162,10 +161,10 @@
               "oeb_min": "vssd*",
               "oeb_sim": null,
               "oeb_max": "vccd*",
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 0
             },
             {
               "gpio": 7,
@@ -177,10 +176,10 @@
               "oeb_min": "vssd*",
               "oeb_sim": null,
               "oeb_max": "vccd*",
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 0
             },
             {
               "gpio": 8,
@@ -192,10 +191,10 @@
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 2
             },
             {
               "gpio": 9,
@@ -207,10 +206,10 @@
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 2
             },
             {
               "gpio": 10,
@@ -222,10 +221,10 @@
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 2
             },
             {
               "gpio": 11,
@@ -237,10 +236,10 @@
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 2
             },
             {
               "gpio": 12,
@@ -252,10 +251,10 @@
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 2
             },
             {
               "gpio": 13,
@@ -267,10 +266,10 @@
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 2
             },
             {
               "gpio": 14,
@@ -282,10 +281,10 @@
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 2
             },
             {
               "gpio": 15,
@@ -297,10 +296,10 @@
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 2
             },
             {
               "gpio": 16,
@@ -312,10 +311,10 @@
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 2
             },
             {
               "gpio": 17,
@@ -327,10 +326,10 @@
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 2
             },
             {
               "gpio": 18,
@@ -342,10 +341,10 @@
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 2
             },
             {
               "gpio": 19,
@@ -357,10 +356,10 @@
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 2
             },
             {
               "gpio": 20,
@@ -372,10 +371,10 @@
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 2
             },
             {
               "gpio": 21,
@@ -387,10 +386,10 @@
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 2
             },
             {
               "gpio": 22,
@@ -402,10 +401,10 @@
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 2
             },
             {
               "gpio": 23,
@@ -417,10 +416,10 @@
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 2
             },
             {
               "gpio": 24,
@@ -432,10 +431,10 @@
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 2
             },
             {
               "gpio": 25,
@@ -447,10 +446,10 @@
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 2
             },
             {
               "gpio": 26,
@@ -462,10 +461,10 @@
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 2
             },
             {
               "gpio": 27,
@@ -477,10 +476,10 @@
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 2
             },
             {
               "gpio": 28,
@@ -492,10 +491,10 @@
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 2
             },
             {
               "gpio": 29,
@@ -507,10 +506,10 @@
               "oeb_min": null,
               "oeb_sim": null,
               "oeb_max": null,
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 2
             },
             {
               "gpio": 30,
@@ -522,10 +521,10 @@
               "oeb_min": "vssd*",
               "oeb_sim": null,
               "oeb_max": "vccd*",
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 0
             },
             {
               "gpio": 31,
@@ -537,10 +536,10 @@
               "oeb_min": "vssd*",
               "oeb_sim": null,
               "oeb_max": "vccd*",
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 0
             },
             {
               "gpio": 32,
@@ -552,10 +551,10 @@
               "oeb_min": "vssd*",
               "oeb_sim": null,
               "oeb_max": "vccd*",
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 0
             },
             {
               "gpio": 33,
@@ -567,10 +566,10 @@
               "oeb_min": "vssd*",
               "oeb_sim": null,
               "oeb_max": "vccd*",
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 0
             },
             {
               "gpio": 34,
@@ -582,10 +581,10 @@
               "oeb_min": "vssd*",
               "oeb_sim": null,
               "oeb_max": "vccd*",
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 0
             },
             {
               "gpio": 35,
@@ -597,10 +596,10 @@
               "oeb_min": "vssd*",
               "oeb_sim": null,
               "oeb_max": "vccd*",
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 0
             },
             {
               "gpio": 36,
@@ -612,10 +611,10 @@
               "oeb_min": "vssd*",
               "oeb_sim": null,
               "oeb_max": "vccd*",
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 0
             },
             {
               "gpio": 37,
@@ -627,10 +626,10 @@
               "oeb_min": "vssd*",
               "oeb_sim": null,
               "oeb_max": "vccd*",
-              "configuration": "INVALID missing mode",
-              "resolved_mode": "INVALID missing mode",
+              "configuration": "USER_STD_OUTPUT",
+              "resolved_mode": "USER_STD_OUTPUT",
               "warning_count": 0,
-              "error_count": 1
+              "error_count": 0
             }
           ],
           "messages": [
@@ -685,174 +684,229 @@
               "text": "user oeb connection to fixed input gpio - firmware override required"
             },
             {
-              "gpio": 5,
+              "gpio": 8,
               "severity": "error",
-              "text": "missing gpio configuration"
-            },
-            {
-              "gpio": 6,
-              "severity": "error",
-              "text": "missing gpio configuration"
-            },
-            {
-              "gpio": 7,
-              "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user output connection for output gpio"
             },
             {
               "gpio": 8,
               "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user oeb for output gpio"
             },
             {
               "gpio": 9,
               "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user output connection for output gpio"
+            },
+            {
+              "gpio": 9,
+              "severity": "error",
+              "text": "missing user oeb for output gpio"
             },
             {
               "gpio": 10,
               "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user output connection for output gpio"
+            },
+            {
+              "gpio": 10,
+              "severity": "error",
+              "text": "missing user oeb for output gpio"
             },
             {
               "gpio": 11,
               "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user output connection for output gpio"
+            },
+            {
+              "gpio": 11,
+              "severity": "error",
+              "text": "missing user oeb for output gpio"
             },
             {
               "gpio": 12,
               "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user output connection for output gpio"
+            },
+            {
+              "gpio": 12,
+              "severity": "error",
+              "text": "missing user oeb for output gpio"
             },
             {
               "gpio": 13,
               "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user output connection for output gpio"
+            },
+            {
+              "gpio": 13,
+              "severity": "error",
+              "text": "missing user oeb for output gpio"
             },
             {
               "gpio": 14,
               "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user output connection for output gpio"
+            },
+            {
+              "gpio": 14,
+              "severity": "error",
+              "text": "missing user oeb for output gpio"
             },
             {
               "gpio": 15,
               "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user output connection for output gpio"
+            },
+            {
+              "gpio": 15,
+              "severity": "error",
+              "text": "missing user oeb for output gpio"
             },
             {
               "gpio": 16,
               "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user output connection for output gpio"
+            },
+            {
+              "gpio": 16,
+              "severity": "error",
+              "text": "missing user oeb for output gpio"
             },
             {
               "gpio": 17,
               "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user output connection for output gpio"
+            },
+            {
+              "gpio": 17,
+              "severity": "error",
+              "text": "missing user oeb for output gpio"
             },
             {
               "gpio": 18,
               "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user output connection for output gpio"
+            },
+            {
+              "gpio": 18,
+              "severity": "error",
+              "text": "missing user oeb for output gpio"
             },
             {
               "gpio": 19,
               "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user output connection for output gpio"
+            },
+            {
+              "gpio": 19,
+              "severity": "error",
+              "text": "missing user oeb for output gpio"
             },
             {
               "gpio": 20,
               "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user output connection for output gpio"
+            },
+            {
+              "gpio": 20,
+              "severity": "error",
+              "text": "missing user oeb for output gpio"
             },
             {
               "gpio": 21,
               "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user output connection for output gpio"
+            },
+            {
+              "gpio": 21,
+              "severity": "error",
+              "text": "missing user oeb for output gpio"
             },
             {
               "gpio": 22,
               "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user output connection for output gpio"
+            },
+            {
+              "gpio": 22,
+              "severity": "error",
+              "text": "missing user oeb for output gpio"
             },
             {
               "gpio": 23,
               "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user output connection for output gpio"
+            },
+            {
+              "gpio": 23,
+              "severity": "error",
+              "text": "missing user oeb for output gpio"
             },
             {
               "gpio": 24,
               "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user output connection for output gpio"
+            },
+            {
+              "gpio": 24,
+              "severity": "error",
+              "text": "missing user oeb for output gpio"
             },
             {
               "gpio": 25,
               "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user output connection for output gpio"
+            },
+            {
+              "gpio": 25,
+              "severity": "error",
+              "text": "missing user oeb for output gpio"
             },
             {
               "gpio": 26,
               "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user output connection for output gpio"
+            },
+            {
+              "gpio": 26,
+              "severity": "error",
+              "text": "missing user oeb for output gpio"
             },
             {
               "gpio": 27,
               "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user output connection for output gpio"
+            },
+            {
+              "gpio": 27,
+              "severity": "error",
+              "text": "missing user oeb for output gpio"
             },
             {
               "gpio": 28,
               "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user output connection for output gpio"
+            },
+            {
+              "gpio": 28,
+              "severity": "error",
+              "text": "missing user oeb for output gpio"
             },
             {
               "gpio": 29,
               "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user output connection for output gpio"
             },
             {
-              "gpio": 30,
+              "gpio": 29,
               "severity": "error",
-              "text": "missing gpio configuration"
-            },
-            {
-              "gpio": 31,
-              "severity": "error",
-              "text": "missing gpio configuration"
-            },
-            {
-              "gpio": 32,
-              "severity": "error",
-              "text": "missing gpio configuration"
-            },
-            {
-              "gpio": 33,
-              "severity": "error",
-              "text": "missing gpio configuration"
-            },
-            {
-              "gpio": 34,
-              "severity": "error",
-              "text": "missing gpio configuration"
-            },
-            {
-              "gpio": 35,
-              "severity": "error",
-              "text": "missing gpio configuration"
-            },
-            {
-              "gpio": 36,
-              "severity": "error",
-              "text": "missing gpio configuration"
-            },
-            {
-              "gpio": 37,
-              "severity": "error",
-              "text": "missing gpio configuration"
+              "text": "missing user oeb for output gpio"
             }
           ],
           "summary": {
             "total": 38,
-            "errors": 33,
+            "errors": 44,
             "warnings": 10,
             "no_issues_banner": false
           }
