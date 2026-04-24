@@ -1,65 +1,65 @@
 {
   "precheck": {
     "version": "1.3.2",
-    "timestamp": "2026-04-24T16:01:51.608445+00:00",
+    "timestamp": "2026-04-24T18:16:40.825146+00:00",
     "pdk": "sky130A",
     "passed": false,
     "checks": {
       "topcell_check": {
         "status": "pass",
-        "duration_s": 1.15
+        "duration_s": 2.08
       },
       "gpio_defines": {
         "status": "fail",
-        "duration_s": 0.57,
+        "duration_s": 1.34,
         "details": "GPIO defines: Invalid directives (33): USER_CONFIG_GPIO_5_INIT=13'hXXXX USER_CONFIG_GPIO_6_INIT=13'hXXXX USER_CONFIG_GPIO_7_INIT=13'hXXXX USER_CONFIG_GPIO_8_INIT=13'hXXXX USER_CONFIG_GPIO_9_INIT=13'hXXXX USER_CONFIG_GPIO_10_INIT=13'hXXXX USER_CONFIG_GPIO_11_INIT=13'hXXXX USER_CONFIG_GPIO_12_INIT=13'hXXXX USER_CONFIG_GPIO_13_INIT=13'hXXXX USER_CONFIG_GPIO_25_INIT=13'hXXXX USER_CONFIG_GPIO_26_INIT=13'hXXXX USER_CONFIG_GPIO_27_INIT=13'hXXXX USER_CONFIG_GPIO_28_INIT=13'hXXXX USER_CONFIG_GPIO_29_INIT=13'hXXXX USER_CONFIG_GPIO_30_INIT=13'hXXXX USER_CONFIG_GPIO_31_INIT=13'hXXXX USER_CONFIG_GPIO_32_INIT=13'hXXXX USER_CONFIG_GPIO_33_INIT=13'hXXXX USER_CONFIG_GPIO_34_INIT=13'hXXXX USER_CONFIG_GPIO_35_INIT=13'hXXXX USER_CONFIG_GPIO_36_INIT=13'hXXXX USER_CONFIG_GPIO_37_INIT=13'hXXXX USER_CONFIG_GPIO_14_INIT=13'hXXXX USER_CONFIG_GPIO_15_INIT=13'hXXXX USER_CONFIG_GPIO_16_INIT=13'hXXXX USER_CONFIG_GPIO_17_INIT=13'hXXXX USER_CONFIG_GPIO_18_INIT=13'hXXXX USER_CONFIG_GPIO_19_INIT=13'hXXXX USER_CONFIG_GPIO_20_INIT=13'hXXXX USER_CONFIG_GPIO_21_INIT=13'hXXXX USER_CONFIG_GPIO_22_INIT=13'hXXXX USER_CONFIG_GPIO_23_INIT=13'hXXXX USER_CONFIG_GPIO_24_INIT=13'hXXXX"
       },
       "xor": {
         "status": "pass",
-        "duration_s": 11.42
+        "duration_s": 18.46
       },
       "klayout_feol": {
         "status": "pass",
-        "duration_s": 187.56
+        "duration_s": 306.52
       },
       "klayout_beol": {
         "status": "pass",
-        "duration_s": 476.06
+        "duration_s": 794.6
       },
       "klayout_offgrid": {
         "status": "pass",
-        "duration_s": 114.24
+        "duration_s": 191.37
       },
       "klayout_met_min_ca_density": {
         "status": "pass",
-        "duration_s": 33.5
+        "duration_s": 55.17
       },
       "klayout_pin_label_purposes_overlapping_drawing": {
         "status": "pass",
-        "duration_s": 20.86
+        "duration_s": 35.12
       },
       "klayout_zeroarea": {
         "status": "pass",
-        "duration_s": 5.96
+        "duration_s": 9.64
       },
       "spike_check": {
         "status": "pass",
-        "duration_s": 3.88
+        "duration_s": 6.67
       },
       "illegal_cellname_check": {
         "status": "pass",
-        "duration_s": 1.18
+        "duration_s": 2.07
       },
       "lvs": {
         "status": "pass",
-        "duration_s": 466.69
+        "duration_s": 744.53
       },
       "oeb": {
         "status": "fail",
-        "duration_s": 5.13,
+        "duration_s": 8.15,
         "details": "33 errors, 10 warnings across 38 GPIOs",
         "report": {
-          "report_relpath": "/tmp/tmpbs39226_/repo/precheck_results/24_APR_2026___15_39_43/outputs/reports/cvc.oeb.report",
+          "report_relpath": "/tmp/tmpys8d6qu9/repo/precheck_results/24_APR_2026___17_40_24/outputs/reports/cvc.oeb.report",
           "design_type": "caravel",
           "gpios": [
             {
