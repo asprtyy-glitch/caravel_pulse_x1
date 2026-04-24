@@ -1,0 +1,95 @@
+ gpio/user/analog |   in   |   out  | analog |  oeb min/sim/max  | configuration
+   0 /  0 /       |        |      2 |        | vssd*/     /vccd* | FIXED_STD_INPUT_NOPULL 2 warnings/errors
+   1 /  1 /       |        |      2 |        | vssd*/     /vccd* | FIXED_STD_INPUT_NOPULL 2 warnings/errors
+   2 /  2 /       |        |      2 |        | vssd*/     /vccd* | FIXED_STD_INPUT_NOPULL 2 warnings/errors
+   3 /  3 /       |        |      2 |        | vssd*/     /vccd* | FIXED_STD_INPUT_PULLUP 2 warnings/errors
+   4 /  4 /       |        |      2 |        | vssd*/     /vccd* | FIXED_STD_INPUT_NOPULL 2 warnings/errors
+   5 /  5 /       |        |      2 |        | vssd*/     /vccd* | USER_STD_OUTPUT 
+   6 /  6 /       |        |      2 |        | vssd*/     /vccd* | USER_STD_OUTPUT 
+   7 /  7 /   0   |        |      2 |        | vssd*/     /vccd* | USER_STD_OUTPUT 
+   8 /  8 /   1   |        |        |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+   9 /  9 /   2   |        |        |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+  10 / 10 /   3   |        |        |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+  11 / 11 /   4   |        |        |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+  12 / 12 /   5   |        |        |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+  13 / 13 /   6   |        |        |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+  14 / 14 /   7   |        |        |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+  15 / 15 /   8   |        |        |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+  16 / 16 /   9   |        |        |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+  17 / 17 /  10   |        |        |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+  18 / 18 /  11   |        |        |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+  19 / 19 /  12   |        |        |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+  20 / 20 /  13   |        |        |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+  21 / 21 /  14   |        |        |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+  22 / 22 /  15   |        |        |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+  23 / 23 /  16   |        |        |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+  24 / 24 /  17   |        |        |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+  25 / 25 /  18   |        |        |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+  26 / 26 /  19   |        |        |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+  27 / 27 /  20   |        |        |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+  28 / 28 /  21   |        |        |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+  29 / 29 /  22   |        |        |        |      /     /      | USER_STD_OUTPUT 2 warnings/errors
+  30 / 30 /  23   |        |      2 |        | vssd*/     /vccd* | USER_STD_OUTPUT 
+  31 / 31 /  24   |        |      2 |        | vssd*/     /vccd* | USER_STD_OUTPUT 
+  32 / 32 /  25   |        |      2 |        | vssd*/     /vccd* | USER_STD_OUTPUT 
+  33 / 33 /  26   |        |      2 |        | vssd*/     /vccd* | USER_STD_OUTPUT 
+  34 / 34 /  27   |        |      2 |        | vssd*/     /vccd* | USER_STD_OUTPUT 
+  35 / 35 /  28   |        |      2 |        | vssd*/     /vccd* | USER_STD_OUTPUT 
+  36 / 36 /       |        |      2 |        | vssd*/     /vccd* | USER_STD_OUTPUT 
+  37 / 37 /       |        |      2 |        | vssd*/     /vccd* | USER_STD_OUTPUT 
+
+*** Detected the following warnings and/or errors: ***
+GPIO  0: Warning: user output connection to fixed input gpio - firmware override required
+GPIO  0: Warning: user oeb connection to fixed input gpio - firmware override required
+GPIO  1: Warning: user output connection to fixed input gpio - firmware override required
+GPIO  1: Warning: user oeb connection to fixed input gpio - firmware override required
+GPIO  2: Warning: user output connection to fixed input gpio - firmware override required
+GPIO  2: Warning: user oeb connection to fixed input gpio - firmware override required
+GPIO  3: Warning: user output connection to fixed input gpio - firmware override required
+GPIO  3: Warning: user oeb connection to fixed input gpio - firmware override required
+GPIO  4: Warning: user output connection to fixed input gpio - firmware override required
+GPIO  4: Warning: user oeb connection to fixed input gpio - firmware override required
+GPIO  8: ERROR: missing user output connection for output gpio
+GPIO  8: ERROR: missing user oeb for output gpio
+GPIO  9: ERROR: missing user output connection for output gpio
+GPIO  9: ERROR: missing user oeb for output gpio
+GPIO 10: ERROR: missing user output connection for output gpio
+GPIO 10: ERROR: missing user oeb for output gpio
+GPIO 11: ERROR: missing user output connection for output gpio
+GPIO 11: ERROR: missing user oeb for output gpio
+GPIO 12: ERROR: missing user output connection for output gpio
+GPIO 12: ERROR: missing user oeb for output gpio
+GPIO 13: ERROR: missing user output connection for output gpio
+GPIO 13: ERROR: missing user oeb for output gpio
+GPIO 14: ERROR: missing user output connection for output gpio
+GPIO 14: ERROR: missing user oeb for output gpio
+GPIO 15: ERROR: missing user output connection for output gpio
+GPIO 15: ERROR: missing user oeb for output gpio
+GPIO 16: ERROR: missing user output connection for output gpio
+GPIO 16: ERROR: missing user oeb for output gpio
+GPIO 17: ERROR: missing user output connection for output gpio
+GPIO 17: ERROR: missing user oeb for output gpio
+GPIO 18: ERROR: missing user output connection for output gpio
+GPIO 18: ERROR: missing user oeb for output gpio
+GPIO 19: ERROR: missing user output connection for output gpio
+GPIO 19: ERROR: missing user oeb for output gpio
+GPIO 20: ERROR: missing user output connection for output gpio
+GPIO 20: ERROR: missing user oeb for output gpio
+GPIO 21: ERROR: missing user output connection for output gpio
+GPIO 21: ERROR: missing user oeb for output gpio
+GPIO 22: ERROR: missing user output connection for output gpio
+GPIO 22: ERROR: missing user oeb for output gpio
+GPIO 23: ERROR: missing user output connection for output gpio
+GPIO 23: ERROR: missing user oeb for output gpio
+GPIO 24: ERROR: missing user output connection for output gpio
+GPIO 24: ERROR: missing user oeb for output gpio
+GPIO 25: ERROR: missing user output connection for output gpio
+GPIO 25: ERROR: missing user oeb for output gpio
+GPIO 26: ERROR: missing user output connection for output gpio
+GPIO 26: ERROR: missing user oeb for output gpio
+GPIO 27: ERROR: missing user output connection for output gpio
+GPIO 27: ERROR: missing user oeb for output gpio
+GPIO 28: ERROR: missing user output connection for output gpio
+GPIO 28: ERROR: missing user oeb for output gpio
+GPIO 29: ERROR: missing user output connection for output gpio
+GPIO 29: ERROR: missing user oeb for output gpio
