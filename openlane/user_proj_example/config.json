@@ -5,15 +5,17 @@
         "dir::../../verilog/rtl/defines.v",
         "dir::../../verilog/rtl/Pulse_X1_Core_v2.v",
         "dir::../../verilog/rtl/Pulse_X1_Edge_AI_Core.v",
-        "dir::../../verilog/rtl/user_project_wrapper.v"
+        "dir::../../verilog/rtl/user_proj_example.v"
     ],
     "CLOCK_PORT": "wb_clk_i",
     "CLOCK_PERIOD": 20,
     "FP_SIZING": "absolute",
-    "DIE_AREA": "0 0 2920 3520",
+    "DIE_AREA": "0 0 900 600",
     "PL_TARGET_DENSITY_PCT": 45,
     "RUN_LINTER": 0,
     "QUIT_ON_LINTER_ERRORS": false,
     "QUIT_ON_TIMING_VIOLATIONS": false,
-    "MAGIC_DRC_USE_GDS": 1
+    "MAGIC_DRC_USE_GDS": 1,
+    "VDD_NETS": ["vccd1"],
+    "GND_NETS": ["vssd1"]
 }
