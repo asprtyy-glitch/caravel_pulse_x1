@@ -32,22 +32,20 @@ module user_project_wrapper (
     output [2:0] user_irq
 );
 
-    // Internal wires
-    wire [31:0] core_data_out;
-
-    // Titan Core Instance - Minimal signals to ensure Hardening success
-    Pulse_X1_Core_v2 titan_core (
+    // Titan Core Instance - Using the correct Module Name and Reset signal
+    Pulse_X1_Edge_AI_Core titan_core (
         .clk(wb_clk_i),
-        .reset(wb_rst_i)
+        .rst_n(wb_rst_i)
     );
 
     // OEB fix: Enable output buffers for all GPIOs (Set to 0)
+    // This resolves the "user mode requires oeb connection" error
     assign io_oeb = 38'b0;
 
-    // Basic tie-off for io_out to prevent floating outputs
+    // Tie-off io_out to prevent floating outputs during Precheck
     assign io_out = 38'b0;
 
-    // Tie-off unused Wishbone and Caravel signals
+    // Tie-off unused Caravel signals
     assign wbs_ack_o = 1'b0;
     assign wbs_dat_o = 32'b0;
     assign user_irq  = 3'b0;
