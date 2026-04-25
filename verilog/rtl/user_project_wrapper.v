@@ -32,19 +32,19 @@ module user_project_wrapper (
     output [2:0] user_irq
 );
 
-    // Internal wires for Cooling System
+    // Internal wire for cooling system control
     wire [7:0] pump_signal;
 
-    // Titan Core Instance - Full Integration
+    // Pulse_X1_Edge_AI_Core Instance - The Brain of Titan
     Pulse_X1_Edge_AI_Core titan_core (
     `ifdef USE_POWER_PINS
         .vccd1(vccd1),
         .vssd1(vssd1),
     `endif
         .clk(wb_clk_i),
-        .rst_n(~wb_rst_i), // Inverting for Active Low Core Reset
+        .rst_n(~wb_rst_i), // Inverting Active-High WB reset to Active-Low
 
-        // Wishbone Interface
+        // Wishbone Interface Connection
         .wb_stb_i(wbs_stb_i),
         .wb_cyc_i(wbs_cyc_i),
         .wb_we_i(wbs_we_i),
@@ -54,14 +54,14 @@ module user_project_wrapper (
         .wb_ack_o(wbs_ack_o),
         .wb_dat_o(wbs_dat_o),
 
-        // Thermal Interface
-        .liquid_temp_sensor(io_in[15:8]), // Thermal input from GPIOs
-        .pump_ctrl(pump_signal)           // Output to Micro-pump
+        // Thermal & Cooling Interface
+        .liquid_temp_sensor(io_in[15:8]), // Reading sensor from GPIOs
+        .pump_ctrl(pump_signal)           // Controlling pump via GPIO
     );
 
-    // OEB Control: Set to 0 for Output, 1 for Input
-    assign io_oeb[37:0] = 38'b0; // Setting all as output for OEB precheck success
-    assign io_oeb[15:8] = 8'hFF; // Setting sensor pins as Inputs
+    // OEB Control: 0 means Output enabled, 1 means Input enabled
+    assign io_oeb[37:0] = 38'b0;      // Set all to output for OEB precheck success
+    assign io_oeb[15:8] = 8'hFF;      // Override GPIO 8-15 as Inputs for Sensor
 
     // Physical Pin Mapping
     assign io_out[16] = pump_signal[0]; // Connecting Pump signal to GPIO 16
