@@ -29,28 +29,27 @@ module Pulse_X1_Edge_AI_Core (
     reg  start_signal;
     wire internal_reset;
     
-    // Internal Reset Logic (Active High for Cores)
+    // Internal Reset Logic (Active High for Pulse_X1_Core)
     assign internal_reset = ~rst_n;
 
-    // Thermal Management Logic (Titan Protection System)
-    // Thresholds: 80C for Warning, 100C for Critical Shutdown
+    // Smart Thermal Management (Titan Protection)
     always @(posedge clk) begin
         if (!rst_n) begin
             start_signal <= 1'b0;
-            pump_ctrl    <= 8'h44; // Default safe pump speed
+            pump_ctrl    <= 8'h44; 
         end else begin
             if (liquid_temp_sensor > 8'd80) begin
-                pump_ctrl <= 8'hFF; // Maximize cooling
+                pump_ctrl <= 8'hFF; // Max cooling
             end else if (liquid_temp_sensor > 8'd100) begin
-                start_signal <= 1'b0; // Emergency Shutdown
+                start_signal <= 1'b0; // Emergency Halt
                 pump_ctrl    <= 8'hFF;
             end else begin
-                pump_ctrl <= 8'h66; // Normal operating speed
+                pump_ctrl <= 8'h66; // Normal operation
             end
         end
     end
 
-    // Wishbone Communication & Register Mapping
+    // Wishbone Communication & Address Mapping
     always @(posedge clk) begin
         if (!rst_n) begin
             wb_ack_o <= 1'b0;
@@ -74,11 +73,11 @@ module Pulse_X1_Edge_AI_Core (
         end
     end
 
-    // Generate 8 AI Cores
+    // Instantiate 8 Pulse_X1 Cores
     genvar i;
     generate
         for (i = 0; i < 8; i = i + 1) begin : core_gen
-            Pulse_X1_Core_inst titan_unit (
+            Pulse_X1_Core titan_unit (
                 .clk(clk),
                 .reset(internal_reset),
                 .hbm3_bus_in(512'b0),
@@ -93,4 +92,3 @@ module Pulse_X1_Edge_AI_Core (
     endgenerate
 
 endmodule
-`default_nettype wire
